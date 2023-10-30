@@ -1,0 +1,16 @@
+info:
+  component: Invoice-service
+  version: 1.0.0
+server:
+  port: 8080
+
+management:
+   endpoints:
+      web:
+         exposure:
+            include: prometheus,health,loggers
+  
+spring:
+   profiles:
+      active: ${PROFILE}
+            

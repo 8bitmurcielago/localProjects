@@ -1,0 +1,16 @@
+info:
+  component: Invoice-service
+  version: 1.0.0
+server:
+  port: 8080
+  
+spring:
+   data:
+      mongodb:
+         auto-index-creation: true
+         uri: mongodb://${MONGODB_USERNAME}:${MONGODB_PASSWORD}@${MONGO_HOST}:${MONGO_PORT}/${MONGO_DATABASE}
+
+invoice:
+   data:      
+      documentUrl: https://sucursalvirtualmovistar.movistar.cl/FNE_Visualizador/index.xhtml?
+      cipherKey: G%D_B//3l]13v3
